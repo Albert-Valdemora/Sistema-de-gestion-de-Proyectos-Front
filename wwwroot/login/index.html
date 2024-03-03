@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crear un Cuenta</h1>
+                <span>Utiliza un corrreo electronico para registrarte</span>
+                <input type="text" placeholder="Nombre" disabled>
+                <input type="email" placeholder="Correo" disabled>
+                <input type="password" placeholder="Contraseña" disabled>
+                <button disabled>Registrarse</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Iniciar Seccion</h1>
+                <span>Utiliza tu correo electronico para iniciar seccion</span>
+                <input type="email" id="username" placeholder="Correo">
+                <input type="password" id="password" placeholder="Contraseña">
+                <a href="#">Olvidaste tu Contraseña?</a>
+                <button type="button" onclick="validateLogin()">Inicia sesión</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido!</h1>
+                    <p>Ingrese sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="login">Inicia Sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hola, Amigos!</h1>
+                    <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

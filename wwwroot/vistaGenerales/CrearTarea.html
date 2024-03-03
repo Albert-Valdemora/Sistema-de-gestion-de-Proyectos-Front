@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Registrar | Tarea</title>
+
+    <style>
+        body{
+        background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+        }
+    </style>
+    
+</head>
+<body>
+
+
+    <section>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-8 col-sm-8 col-md-6 m-auto">
+                    <div class="card border-0 shadow">
+                        <div class="card-body text-center">
+                            <h3>Registrar Tarea</h3>
+                            <form id="registroForm">
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                                    <label for="nombre">Ingresa el Nombre del Proyecto</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="descripcion" class="form-control" placeholder="Descripcion" required>
+                                    <label for="descripcion">Ingresa una Descripcion</label>
+                                </div>
+
+                                <div class="form-floating mb-3" id="opcion1">
+                                    <select class="form-select" id="estado" aria-label="Floating label select example" required>
+                                        <option value="" selected disabled>Selecciona un Estado</option>
+                                        <option value="En progreso">En progreso</option>
+                                        <option value="Pendiente">Pendiente</option>
+                                        <option value="Completada">Completada</option>
+                                    </select>
+                                    <label for="estado">Selecciona un Estado</label>
+                                </div>
+
+                                <div class="form-floating mb-3" id="opcion2">
+                                    <select class="form-select" id="colaborador" aria-label="Floating label select example">
+                                        <option value="" selected disabled>Selecciona un Colaborador</option>
+                                        <option value="Albert Valdemora">Albert Valdemora</option>
+                                        <option value="karina Suarez">karina Suarez</option>
+                                        <option value="Boy Gaspar">Boy Gaspar</option>
+                                    </select>
+                                    <label for="colaborador">Selecciona un Colaborador</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="date" id="expiry" class="form-control" placeholder="Expiry" required>
+                                    <label for="expiry">Ingresa  la fecha de Expiracion</label>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="../vistaFront/index.html" class="btn btn-secondary">Regresar</a>
+                                    <button type="button" onclick="registroCliente()" class="btn btn-primary ">Registrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../vistaGenerales/js/Tareas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <title>Inicio</title>
+
+</head>
+
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="me.jpg" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="/" class="nav_logo active"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Gestion-AV</span> </a>
+                <div class="nav_list">
+                    <a href="../vistaGenerales/Proyectos.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">proyectos</span> </a> 
+                    <a href="../vistaGenerales/CrearTarea.html" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Crear Tareas</span> </a> 
+                    <a href="../vistaGenerales/Tareas.html" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Tareas</span> </a> 
+                    <a href="#" class="nav_link disa"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Lorem</span> </a> 
+                    <a href="#" class="nav_link disa"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Lorem</span> </a>
+                    <a href="#" class="nav_link disa"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Lorem</span> </a> 
+                </div>
+            </div>
+            <a href="../login/index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Cerrar Sesión</span> </a>
+        </nav>
+    </div>
+
+
+    <div class="height-100 ">
+        <div class="container-fluid d-flex justify-content-center gap-4">
+
+                <div class="card mt-5" style="width: 30rem; background-color: #00c0ef;">
+                    <div class="card-body">
+                        <h5 class="card-title">Listar proyectos</h5>
+                        <p class="card-text">Aqui podra ver una lista de los proyectos ya creados.</p>
+                        <a href="../vistaGenerales/Proyectos.html" class="btn btn-primary">Ver Proyectos</a>
+                    </div>
+                </div>
+
+                <div class="card mt-5" style="width: 30rem; background-color: #00a75a;">
+                    <div class="card-body">
+                        <h5 class="card-title">Listar Tareas</h5>
+                        <p class="card-text">Aqui podra ver una lista de las tareas creadas.</p>
+                        <a href="../vistaGenerales/Tareas.html" class="btn btn-primary">Ver Tareas</a>
+                    </div>
+                </div> 
+            
+                <div class="card mt-5" style="width: 30rem; background-color: #dc4f3a;">
+                    <div class="card-body">
+                        <h5 class="card-title">Crear tareas</h5>
+                        <p class="card-text">Aqui prodra crear tareas a los proyectos ya creados.</p>
+                        <a href="../vistaGenerales/CrearTarea.html" class="btn btn-primary">Crear Tarea</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

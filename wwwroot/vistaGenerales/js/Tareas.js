@@ -2,7 +2,7 @@
 function cargarTareas() {
 
 
-    const URL = "https://localhost:7174/Tareas/Leer";
+    const URL = "https://localhost:7174/ProyectoFacade/ListarTareas";
     const HTMLResponsebody = document.querySelector("#body");
 
     fetch(URL)
@@ -42,18 +42,24 @@ function registroCliente(){
     };
 
     try {
-        fetch('https://localhost:7174/Tareas/Agregar', {
+        fetch('https://localhost:7174/ProyectoFacade/CrearTarea', {
             method: 'POST',
             body: JSON.stringify(customerData),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         })
-            .then((response) => response.json())
-            .then((json) => console.log(json));
+
+        mostrarToast();
 
     } catch (error) {
         swal("Error!", "!Hubo un problema al registrar la Tarea!", "error");
     }
 };
 
+
+function mostrarToast() {
+    var ejemploToast = document.getElementById('miToast');
+    var toast = new bootstrap.Toast(ejemploToast);
+    toast.show();
+}
